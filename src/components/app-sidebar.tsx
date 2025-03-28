@@ -33,18 +33,6 @@ const items = [
     url: "use-optimistic",
   },
   {
-    title: "react server components",
-    url: "react-server-components",
-  },
-  {
-    title: "use API",
-    url: "use-api",
-  },
-  {
-    title: "server actions",
-    url: "server-actions",
-  },
-  {
     title: "ref as Prop",
     url: "ref",
   },
