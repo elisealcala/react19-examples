@@ -22,39 +22,39 @@ const items = [
   },
   {
     title: "useTransition",
-    url: "#",
+    url: "use-transition",
   },
   {
     title: "useActionState",
-    url: "#",
+    url: "use-action-state",
   },
   {
     title: "useOptimistic",
-    url: "#",
+    url: "use-optimistic",
   },
   {
     title: "react server components",
-    url: "#",
+    url: "react-server-components",
   },
   {
     title: "use API",
-    url: "#",
+    url: "use-api",
   },
   {
     title: "server actions",
-    url: "#",
+    url: "server-actions",
   },
   {
     title: "ref as Prop",
-    url: "#",
+    url: "ref",
   },
   {
     title: "native metadata",
-    url: "#",
+    url: "native-metadata",
   },
   {
     title: "stylesheet support",
-    url: "#",
+    url: "stylesheet-support",
 
   },
 ]
