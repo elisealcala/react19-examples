@@ -1,54 +1,28 @@
-# React + TypeScript + Vite
+# ⚛️ React 19: Everything You Need to Know
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repo contains hands-on examples from my Medium article on the most exciting features in **React 19**.
 
-Currently, two official plugins are available:
+👉 **Read the article:**  
+https://medium.com/@elisealcala/react-19-everything-you-need-to-know-ff65674c833c
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📁 Project Structure
 
-## Expanding the ESLint configuration
+Each file inside `routes/` corresponds to a feature explored in the blog post:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| File | Feature | Description |
+|------|---------|-------------|
+| `async-functions.tsx` | Async Functions in Transitions | Run `await` logic inside `startTransition()` |
+| `native-metadata.tsx` | Native Metadata Management | Use `<title>` and `<meta>` directly in JSX |
+| `ref.tsx` | `ref` as a Prop | Pass a ref to child components without `forwardRef` |
+| `stylesheet-support.tsx` | Stylesheet Support & Preload | Load and preload stylesheets natively |
+| `use-action-state.tsx` | `useActionState` | Manage async form state in a declarative way |
+| `use-optimistic.tsx` | `useOptimistic` | Apply optimistic UI updates immediately |
+| `use-transition.tsx` | Enhanced `useTransition` | Manage UI transitions more smoothly |
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## ▶️ How to Run
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+```bash
+git clone https://github.com/elisealcala/react19-examples.git
+cd react19-examples
+npm install
+npm run dev
